@@ -1,0 +1,159 @@
+2025-09-08 20:28:17,919 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 20:28:17,920 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 20:28:17,920 | INFO |  * Restarting with stat
+2025-09-08 20:28:18,337 | WARNING |  * Debugger is active!
+2025-09-08 20:28:18,339 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 20:29:18,276 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 20:29:18,277 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 20:29:18,277 | INFO |  * Restarting with stat
+2025-09-08 20:29:18,747 | WARNING |  * Debugger is active!
+2025-09-08 20:29:18,749 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 21:14:16,312 | INFO | 127.0.0.1 - - [08/Sep/2025 21:14:16] "GET / HTTP/1.1" 200 -
+2025-09-08 21:14:17,671 | INFO | 127.0.0.1 - - [08/Sep/2025 21:14:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-08 21:14:19,587 | INFO | 127.0.0.1 - - [08/Sep/2025 21:14:19] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:15:33,216 | ERROR | Flask error: module 'src.market_orders' has no attribute 'place_market_order'
+2025-09-08 21:15:33,216 | INFO | 127.0.0.1 - - [08/Sep/2025 21:15:33] "POST /trade HTTP/1.1" 200 -
+2025-09-08 21:16:02,743 | ERROR | Flask error: module 'src.market_orders' has no attribute 'place_market_order'
+2025-09-08 21:16:02,743 | INFO | 127.0.0.1 - - [08/Sep/2025 21:16:02] "POST /trade HTTP/1.1" 200 -
+2025-09-08 21:17:15,756 | INFO | 127.0.0.1 - - [08/Sep/2025 21:17:15] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:17:53,470 | INFO | 127.0.0.1 - - [08/Sep/2025 21:17:53] "GET / HTTP/1.1" 200 -
+2025-09-08 21:17:54,945 | INFO | 127.0.0.1 - - [08/Sep/2025 21:17:54] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:18:15,525 | ERROR | Flask error: module 'src.market_orders' has no attribute 'place_market_order'
+2025-09-08 21:18:15,525 | INFO | 127.0.0.1 - - [08/Sep/2025 21:18:15] "POST /trade HTTP/1.1" 200 -
+2025-09-08 21:18:31,374 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 21:18:31,374 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 21:18:31,374 | INFO |  * Restarting with stat
+2025-09-08 21:18:31,852 | WARNING |  * Debugger is active!
+2025-09-08 21:18:31,854 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 21:18:43,082 | INFO | 127.0.0.1 - - [08/Sep/2025 21:18:43] "GET / HTTP/1.1" 200 -
+2025-09-08 21:18:44,797 | INFO | 127.0.0.1 - - [08/Sep/2025 21:18:44] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:19:09,901 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:19:09,901 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:19:10,106 | INFO | Placing MARKET order: BUY 0.001 BTCUSDT
+2025-09-08 21:19:10,106 | INFO | Placing MARKET order: BUY 0.001 BTCUSDT
+2025-09-08 21:19:10,823 | INFO | Market order response: {'orderId': 5642719842, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ3b999772a1b92af8e7f70', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757346552036}
+2025-09-08 21:19:10,823 | INFO | Market order response: {'orderId': 5642719842, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ3b999772a1b92af8e7f70', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757346552036}
+2025-09-08 21:19:10,834 | INFO | 127.0.0.1 - - [08/Sep/2025 21:19:10] "POST /trade HTTP/1.1" 200 -
+2025-09-08 21:24:46,465 | INFO | 127.0.0.1 - - [08/Sep/2025 21:24:46] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:25:20,196 | INFO | 127.0.0.1 - - [08/Sep/2025 21:25:20] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:26:36,413 | INFO | 127.0.0.1 - - [08/Sep/2025 21:26:36] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:26:38,276 | INFO | 127.0.0.1 - - [08/Sep/2025 21:26:38] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:26:40,671 | INFO | 127.0.0.1 - - [08/Sep/2025 21:26:40] "GET / HTTP/1.1" 200 -
+2025-09-08 21:30:24,396 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 21:30:24,396 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 21:30:24,397 | INFO |  * Restarting with stat
+2025-09-08 21:30:24,798 | WARNING |  * Debugger is active!
+2025-09-08 21:30:24,800 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 21:30:29,265 | INFO | 127.0.0.1 - - [08/Sep/2025 21:30:29] "GET / HTTP/1.1" 200 -
+2025-09-08 21:30:30,820 | INFO | 127.0.0.1 - - [08/Sep/2025 21:30:30] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:31:45,304 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 21:31:45,304 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 21:31:45,305 | INFO |  * Restarting with stat
+2025-09-08 21:31:45,719 | WARNING |  * Debugger is active!
+2025-09-08 21:31:45,720 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 21:31:51,832 | INFO | 127.0.0.1 - - [08/Sep/2025 21:31:51] "GET / HTTP/1.1" 200 -
+2025-09-08 21:31:53,665 | INFO | 127.0.0.1 - - [08/Sep/2025 21:31:53] "GET / HTTP/1.1" 200 -
+2025-09-08 21:31:55,491 | INFO | 127.0.0.1 - - [08/Sep/2025 21:31:55] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:32:35,265 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 21:32:35,265 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 21:32:35,266 | INFO |  * Restarting with stat
+2025-09-08 21:32:35,695 | WARNING |  * Debugger is active!
+2025-09-08 21:32:35,697 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 21:32:37,681 | INFO | 127.0.0.1 - - [08/Sep/2025 21:32:37] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:33:21,012 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 21:33:21,012 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 21:33:21,012 | INFO |  * Restarting with stat
+2025-09-08 21:33:21,449 | WARNING |  * Debugger is active!
+2025-09-08 21:33:21,451 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 21:33:27,957 | INFO | 127.0.0.1 - - [08/Sep/2025 21:33:27] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:33:28,656 | INFO | 127.0.0.1 - - [08/Sep/2025 21:33:28] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:33:31,363 | INFO | 127.0.0.1 - - [08/Sep/2025 21:33:31] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:33:44,194 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 21:33:44,194 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 21:33:44,195 | INFO |  * Restarting with stat
+2025-09-08 21:33:44,692 | WARNING |  * Debugger is active!
+2025-09-08 21:33:44,696 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 21:33:46,942 | INFO | 127.0.0.1 - - [08/Sep/2025 21:33:46] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:34:16,131 | INFO | 127.0.0.1 - - [08/Sep/2025 21:34:16] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:35:21,063 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:35:21,063 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:35:21,267 | INFO | Placing MARKET order: BUY 0.001 BTCUSDT
+2025-09-08 21:35:21,267 | INFO | Placing MARKET order: BUY 0.001 BTCUSDT
+2025-09-08 21:35:21,989 | INFO | Market order response: {'orderId': 5642731686, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ1413446e94c8111dc34fe3', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757347523167}
+2025-09-08 21:35:21,989 | INFO | Market order response: {'orderId': 5642731686, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ1413446e94c8111dc34fe3', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757347523167}
+2025-09-08 21:35:21,997 | INFO | 127.0.0.1 - - [08/Sep/2025 21:35:21] "POST /trade HTTP/1.1" 200 -
+2025-09-08 21:35:40,428 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 21:35:40,428 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 21:35:40,428 | INFO |  * Restarting with stat
+2025-09-08 21:35:40,858 | WARNING |  * Debugger is active!
+2025-09-08 21:35:40,860 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 21:35:45,951 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:35:45,951 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:35:46,152 | INFO | Placing MARKET order: BUY 0.001 BTCUSDT
+2025-09-08 21:35:46,152 | INFO | Placing MARKET order: BUY 0.001 BTCUSDT
+2025-09-08 21:35:46,764 | INFO | Market order response: {'orderId': 5642731998, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ54e6eb8f6e5d5be07f4a91', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757347548002}
+2025-09-08 21:35:46,764 | INFO | Market order response: {'orderId': 5642731998, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ54e6eb8f6e5d5be07f4a91', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757347548002}
+2025-09-08 21:35:46,781 | INFO | 127.0.0.1 - - [08/Sep/2025 21:35:46] "POST /trade HTTP/1.1" 200 -
+2025-09-08 21:35:57,406 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-08 21:35:57,406 | INFO | [33mPress CTRL+C to quit[0m
+2025-09-08 21:35:57,407 | INFO |  * Restarting with stat
+2025-09-08 21:35:57,855 | WARNING |  * Debugger is active!
+2025-09-08 21:35:57,857 | INFO |  * Debugger PIN: 116-673-374
+2025-09-08 21:36:04,214 | INFO | 127.0.0.1 - - [08/Sep/2025 21:36:04] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:36:06,482 | INFO | 127.0.0.1 - - [08/Sep/2025 21:36:06] "GET /trade HTTP/1.1" 200 -
+2025-09-08 21:36:28,241 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:36:28,241 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:36:28,444 | INFO | Placing MARKET order: BUY 0.0001 BTCUSDT
+2025-09-08 21:36:28,444 | INFO | Placing MARKET order: BUY 0.0001 BTCUSDT
+2025-09-08 21:36:29,163 | ERROR | Market order failed: APIError(code=-1111): Precision is over the maximum defined for this asset.
+Traceback (most recent call last):
+  File "D:\Internship assignment\other\src\market_orders.py", line 78, in place_market_order
+    res = self.client.futures_create_order(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Internship assignment\other\venv\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Internship assignment\other\venv\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Internship assignment\other\venv\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Internship assignment\other\venv\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1111): Precision is over the maximum defined for this asset.
+2025-09-08 21:36:29,163 | ERROR | Market order failed: APIError(code=-1111): Precision is over the maximum defined for this asset.
+Traceback (most recent call last):
+  File "D:\Internship assignment\other\src\market_orders.py", line 78, in place_market_order
+    res = self.client.futures_create_order(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Internship assignment\other\venv\Lib\site-packages\binance\client.py", line 7659, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Internship assignment\other\venv\Lib\site-packages\binance\client.py", line 126, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Internship assignment\other\venv\Lib\site-packages\binance\client.py", line 89, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Internship assignment\other\venv\Lib\site-packages\binance\client.py", line 98, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-1111): Precision is over the maximum defined for this asset.
+2025-09-08 21:36:29,212 | INFO | 127.0.0.1 - - [08/Sep/2025 21:36:29] "POST /trade HTTP/1.1" 200 -
+2025-09-08 21:36:53,740 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:36:53,740 | INFO | Binance client initialized (testnet=True)
+2025-09-08 21:36:53,942 | INFO | Placing MARKET order: BUY 0.001 BTCUSDT
+2025-09-08 21:36:53,942 | INFO | Placing MARKET order: BUY 0.001 BTCUSDT
+2025-09-08 21:36:54,657 | INFO | Market order response: {'orderId': 5642732890, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ9a083738723047c81e29da', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757347615800}
+2025-09-08 21:36:54,657 | INFO | Market order response: {'orderId': 5642732890, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ9a083738723047c81e29da', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1757347615800}
+2025-09-08 21:36:54,663 | INFO | 127.0.0.1 - - [08/Sep/2025 21:36:54] "POST /trade HTTP/1.1" 200 -
