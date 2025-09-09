@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trade - Binance Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .container {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
+        }
+        h1, h3 {
+            color: #f8f9fa;
+        }
+        label {
+            color: #e0e0e0;
+        }
+        input, select, textarea {
+            background-color: #2b2b2b;
+            color: #e0e0e0;
+            border: 1px solid #444;
+        }
+        input::placeholder {
+            color: #999;
+        }
+        .btn-success {
+            background-color: #198754;
+            border: none;
+        }
+        .btn-success:hover {
+            background-color: #157347;
+        }
+        .alert {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+        }
+        pre {
+            background-color: #2b2b2b;
+            color: #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">Place an Order</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST">
+        <div class="mb-3">
+            <label>Symbol</label>
+            <input class="form-control" name="symbol" placeholder="BTCUSDT" required>
+        </div>
+        <div class="mb-3">
+            <label>Side</label>
+            <select class="form-select" name="side" required>
+                <option>BUY</option>
+                <option>SELL</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label>Order Type</label>
+            <select class="form-select" name="order_type" required>
+                <option value="MARKET">Market</option>
+                <option value="LIMIT">Limit</option>
+                <option value="OCO">OCO</option>
+                <option value="TWAP">TWAP</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label>Quantity</label>
+            <input type="number" step="0.0001" class="form-control" name="quantity" required>
+        </div>
+        <div class="mb-3">
+            <label>Price (if needed)</label>
+            <input type="number" step="0.01" class="form-control" name="price">
+        </div>
+        <div class="mb-3">
+            <label>Stop Price (OCO only)</label>
+            <input type="number" step="0.01" class="form-control" name="stop">
+        </div>
+        <div class="mb-3">
+            <label>Limit Price (OCO only)</label>
+            <input type="number" step="0.01" class="form-control" name="limit_price">
+        </div>
+        <div class="mb-3">
+            <label>Chunks (TWAP only)</label>
+            <input type="number" class="form-control" name="chunks">
+        </div>
+        <div class="mb-3">
+            <label>Interval (TWAP only, seconds)</label>
+            <input type="number" class="form-control" name="interval">
+        </div>
+        <button type="submit" class="btn btn-success">Place Order</button>
+    </form>
+
+    {% if order_response %}
+    <h3 class="mt-4">📋 Last Order Response:</h3>
+    <pre>{{ order_response | tojson(indent=2) }}</pre>
+    {% endif %}
+</div>
+</body>
+</html>
